@@ -16,17 +16,11 @@ module.exports = function Dynamic(options, UI) {
 
     const Parser = require('expr-eval').Parser;
     function generator(expression) {
-      let expr = Parser.parse(expression);
-      return expr.toJSFunction("r,b,g,a");
+      let expr = Parser.parse('R = r; G = g; B = b; A = a; ' + expression);
+      return expr.toJSFunction("r,g,b,a,R,G,B,A");
     }
-
+    
     var channels = ['red', 'green', 'blue', 'alpha'];
-
-    // make expressions/options case insensitive
-    options.R = options.r;
-    options.G = options.g;
-    options.B = options.b;
-    options.A = options.a;
 
     channels.forEach(function(channel) {
       if (channel === 'alpha'){
