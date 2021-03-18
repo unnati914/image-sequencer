@@ -14,7 +14,7 @@
     "test-ui-2": "node ./node_modules/.bin/jest",
     "test-cli": "node test/cli/*.js | tap-spec",
     "setup": "npm i && npm i -g grunt grunt-cli && npm rebuild --build-from-source && grunt build",
-    "start": "grunt serve" 
+    "start": "grunt serve"
   },
   "lint-staged": {
     "*.js": [
@@ -40,12 +40,13 @@
     "base64-img": "^1.0.4",
     "bootstrap": "^3.4.1",
     "bootstrap-colorpicker": "^2.5.3",
-    "buffer": "~5.7.0",
-    "commander": "^6.2.0",
+    "buffer": "~6.0.2",
+    "commander": "^7.0.0",
     "compressorjs": "^1.0.5",
     "data-uri-to-buffer": "^3.0.0",
     "downloadjs": "^1.4.7",
     "eslint": "^6.1.0",
+    "expr-eval": "^2.0.2",
     "fisheyegl": "^0.1.2",
     "font-awesome": "~4.7.0",
     "geotiff": "^1.0.0-beta.6",
@@ -69,7 +70,7 @@
     "lodash": "^4.17.11",
     "ndarray": "^1.0.18",
     "opencv.js": "^1.2.1",
-    "ora": "^4.0.3",
+    "ora": "^5.1.0",
     "pace": "0.0.4",
     "pngquant-bin": "^6.0.0",
     "puppeteer": "^1.14.0",
@@ -106,8 +107,9 @@
     "lint-staged": "^10.0.3",
     "looks-same": "^7.0.0",
     "matchdep": "^2.0.0",
+    "resemblejs": "^3.2.5",
     "tap-spec": "^5.0.0",
-    "tape": "^4.9.2",
+    "tape": "^5.2.0",
     "tape-run": "^8.0.0",
     "uglify-es": "^3.3.7"
   },
